@@ -1,9 +1,10 @@
+// Define unicode character gradient
+//const LEVEL_CHARACTERS: &str = " ░▒▓█";
+const LEVEL_CHARACTERS: &str = " ·›‹«»+×=¤zuw2a&4f¾O6TU9Sk§PZDF¥bÞd$8Gß€AÐXRKHENBWMØŒÆ";
+const RESOLUTION: i32 = 256;
+const ITERATIONS: i32 = 32;
+
 fn main() {
-    // Define unicode character gradient
-    //const LEVEL_CHARACTERS: &str = " ░▒▓█";
-    const LEVEL_CHARACTERS: &str = " ·›‹«»+×=¤zuw2a&4f¾O6TU9Sk§PZDF¥bÞd$8Gß€AÐXRKHENBWMØŒÆ";
-    const RESOLUTION: i32 = 256;
-    const ITERATIONS: i32 = 32;
     for y in 0..(RESOLUTION / 2) {
         // Calculate pixel y location based on y and resolution
         let oy = y as f64 / RESOLUTION as f64 * 6.0 - 1.5;
